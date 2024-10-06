@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head >
-    <meta name="viewport" content="width=320px, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <title>Первый макет</title>
@@ -9,20 +9,21 @@
   <body>
     <header>
       <nav class="header">
-        <div class="header__icon-burger--icon-margin">
-          <img src="/image/burger.svg" alt="Иконка раскрвыающегося меню">
+        <div class="header__left-block">
+          <div class="header__icon-burger header--icon-margin">
+            <img src="/image/burger.svg" alt="Иконка раскрвыающегося меню">
+          </div>
+          <div class="header__logo">
+            <img src="/image/Group.svg" alt="Логотип">
+          </div>
         </div>
-        <div class="header__logo">
-          <img src="/image/Group.svg" alt="Логотип">
-        </div>
-        <div class="header__divider--icon-margin">
-          <img src="/image/divider.svg" alt="">
-        </div>
-        <div class="icon__repair--icon-margin">
-          <img src="/image/repair.svg" alt="">
-        </div>
-        <div class="icon__checkstatus--icon-margin">
-          <img src="/image/checkstatus.svg" alt="">
+        <div class="header__right-block">
+          <div class="header__icon-repair header--icon-margin">
+            <img src="/image/repair.svg" alt="">
+          </div>
+          <div class="header__icon-checkstatus header--icon-margin">
+            <img src="/image/checkstatus.svg" alt="">
+          </div>
         </div>
       </nav>
     </header>
@@ -30,10 +31,12 @@
       <div class="main__title-block">
         <h1 class="main__title">Услуги и сервисы</h1>
       </div>
-      <div class="slide-menu">
-          <button class="slide-menu__button1" value="Ремонтируемые устройства">Ремонтируемые устройства</button>
-          <button class="slide-menu__button2" value="Дополнительные услуги">Дополнительные услуги</button>
-      </div>
+      <nav class="slide-menu">
+        <ul>
+          <li class="slide-menu__button1 slide-menu--button-stile1 active"><a>Ремонтируемые устройства</a></li>
+          <li class="slide-menu__button2 slide-menu--button-stile1 "><a>Дополнительные услуги</a><li> 
+        </ul>
+      </nav>
       <article class="block1">
           <section class="block1__text">
             <p>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
