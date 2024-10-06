@@ -65,12 +65,23 @@
 }
 
 .slide-menu {
-  margin-left: 16px;
-  display: flex;
-  overflow: none;
+  overflow-x: auto;
 }
 
-.slide-menu--button-stile1 {
-  border: none;
-  background-color: #F8F8F8;
+.slide-menu::-webkit-scrollbar {
+  width: 0;
 }
+
+.slide-menu__list {
+  display: flex;
+  flex-direction: row;
+  white-space: nowrap;
+}
+
+/* .slide-menu--button-stile1 {
+  flex-wrap: nowrap;
+  display: inline-block;
+  margin-left: 16px;
+  overflow: scroll;
+} */
+
