@@ -6,35 +6,44 @@
     <link rel="stylesheet" href="style.css">
     <title>Первый макет</title>
   </head>
-  <body>
+  <body class="body">
     <header>
       <nav class="header">
-        <div class="header__left-block">
+        <div class="header__left-block header__left-block--style">
           <div class="header__icon-burger header--icon-margin">
-            <img src="/image/burger.svg" alt="Иконка раскрвыающегося меню">
+            <img src="/image/burger.svg" alt="icon menu">
           </div>
           <div class="header__logo">
-            <img src="/image/Group.svg" alt="Логотип">
+            <img src="/image/Group.svg" alt="icon logo">
           </div>
         </div>
-        <div class="header__right-block">
+        <div class="header__right-block header__right-block--style">
+          <div class="header__icon-call header--icon-margin header__icon--for-768">
+            <img src="/image/call.svg" alt="icon call">
+          </div>
+          <div class="header__icon-call header--icon-margin header__icon--for-768">
+            <img src="/image/chat.svg" alt="icon chat">
+          </div>
+          <div class="header__icon-call header--icon-margin header__icon--for-768">
+            <img src="/image/profile.svg" alt="icon profile">
+          </div>
           <div class="header__icon-repair header--icon-margin">
-            <img src="/image/repair.svg" alt="">
+            <img src="/image/repair.svg" alt="icon repair">
           </div>
           <div class="header__icon-checkstatus header--icon-margin">
-            <img src="/image/checkstatus.svg" alt="">
+            <img src="/image/checkstatus.svg" alt="icon checkstatus">
           </div>
         </div>
       </nav>
     </header>
     <main class="main">
-      <div class="main__title-block">
-        <h1 class="main__title">Услуги и сервисы</h1>
+      <div class="main__title-block main__title-block--style">
+        <h1 class="main__title ">Услуги и сервисы</h1>
       </div>
       <nav class="slide-menu">
         <ul class="slide-menu__list">
           <li class="slide-menu__item"><a class="slide-menu__button" >Ремонтируемые устройства</a></li>
-          <li class="slide-menu__item"><a class="slide-menu__button">Дополнительные услуги</a><li>
+          <li class="slide-menu__item"><a class="slide-menu__button">Дополнительные услуги</a></li>
           <li class="slide-menu__item"><a class="slide-menu__button">Цены на услуги</a></li>
           <li class="slide-menu__item"><a class="slide-menu__button">Адреса сервисных центров</a></li>
           <li class="slide-menu__item"><a class="slide-menu__button">Специальные цены</a></li>
@@ -42,13 +51,12 @@
         </ul>
       </nav>
       <article class="block1">
-          <section class="block1__text">
+          <section class="block1__text block1__text--style">
             <p>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
+            <div class="read-more">
+              <h2 class="read-more__text read-more__text--style">Читать далее</h2>
+            </div>
           </section>
-          <div class="read-more">
-            <div class="read-more__icon-expand"></div>
-            <h2 class="read-more__text">Читать далее</h2>
-          </div>
           <img src="/image/block1_image.png" alt="Фотография с логотипом" class="block1__image">
       </article>
     </main>

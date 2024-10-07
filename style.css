@@ -1,3 +1,44 @@
+@font-face {
+  font-family: "TTLakes-Medium";
+  src: local("TTLakes-Medium"),
+    url(/font-style-TTlakes/TTLakes-Medium.ttf) format("ttf"),
+    url(/font-style-TTlakes/TTLakes-Medium.woff) format("woff"),
+    url(/font-style-TTlakes/TTLakes-Medium.eot) format("eot");
+}
+
+
+@font-face {
+  font-family: "TTLakes-Bold";
+  src: local("TTLakes-Bold"),
+    url(/font-style-TTlakes/TTLakes-Bold.ttf) format("ttf"),
+    url(/font-style-TTlakes/TTLakes-Bold.woff) format("woff"),
+    url(/font-style-TTlakes/TTLakes-Bold.eot) format("eot");
+}
+
+@font-face {
+  font-family: "TTLakes-Black";
+  src: local("TTLakes-Black"),
+    url(/font-style-TTlakes/TTLakes-Black.ttf) format("ttf"),
+    url(/font-style-TTlakes/TTLakes-Black.woff) format("woff"),
+    url(/font-style-TTlakes/TTLakes-Black.eot) format("eot");
+}
+
+@font-face {
+  font-family: "TTLakes-Light";
+  src: local("TTLakes-Light"),
+    url(/font-style-TTlakes/TTLakes-Light.ttf) format("ttf"),
+    url(/font-style-TTlakes/TTLakes-Light.woff) format("woff"),
+    url(/font-style-TTlakes/TTLakes-Light.eot) format("eot");
+}
+
+@font-face {
+  font-family: "TTLakesCondensed-Regular";
+  src: local("TTLakesCondensed-Regular"),
+    url(/font-style-TTlakes/TTLakesCondensed-Regular.ttf) format("ttf"),
+    url(/font-style-TTlakes/TTLakesCondensed-Regular.woff) format("woff"),
+    url(/font-style-TTlakes/TTLakesCondensed-Regular.eot) format("eot");
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -6,11 +47,6 @@
   outline: 0;
   text-decoration: none;
   list-style: none;
-}
-
-@font-face {
-  font-family:"TTLakes-Black";
-  src: url(/font-style-TTlakes/TTLakes-Black.eot);
 }
 
 .header {
@@ -22,24 +58,37 @@
   background-color: #FFFFFF;
   padding-left: 16px;
 }
+
 .header__right-block,
 .header__left-block {
   display: flex;
 }
 
-.header__right-block::before {
+.header__logo::after {
   content: "";
   background-color: #EAEAEA;
-  position: relative;
+  display: block;
+  position: fixed;
   height: 32px;
   width: 2px;
-  margin-right: 20px;
-  margin-left: 5px;
-  margin-top: 5px;
+  top: 27px;
+  right: 120px;
 }
 
-.header__left-block {
+
+.header__left-block--style {
   align-items: center;
+  padding-right: 15px;
+}
+
+.header__icon--for-768 {
+  display: none;
+}
+
+.button-call::before {
+  content: "";
+  background-image: url(/image/call.svg);
+  
 }
 
 .header--icon-margin {
@@ -50,10 +99,10 @@
   background-color: #F8F8F8;
   display: flex;
   flex-direction: column;
-  font-family: "TTLakes-Black", sans-serif;
+  height: 100%;
 }
 
-.main__title-block {
+.main__title-block--style {
   margin: 24px 16px 24px 0;
 
 }
@@ -68,14 +117,16 @@
 
 .main__title {
   margin-left: 12px;
-  margin-top: 5px;
+  margin-top: 2px;
   font-size: 28px;
+  font-family: "TTLakes-Bold";
 }
 
 .slide-menu {
   overflow-x: auto;
   font-size: 16px;
-  box-shadow: inset -10px 0 -5px -10px white;
+  color: #7E7E82;
+  font-family: "TTLakes-Medium";
 }
 
 .slide-menu::-webkit-scrollbar {
@@ -86,15 +137,83 @@
   display: flex;
   flex-direction: row;
   white-space: nowrap;
+  width: 100%;
+  gap: 10px;
+  margin-left: 24px;
+  margin-top: 2%;
 }
 
 .slide-menu__item {
-  padding: 15px 20px;
-  margin-left: 15px;
+  padding: 0;
+  margin: 0;
+  height: 40px;
 }
 
-.slide-menu__item:hover {
-  border: 2px solid #b7ffec;
+.slide-menu__button {
+  height: 40px;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 5px 10px;
+  display: block;
+  box-sizing: border-box;
+  border: 2px solid transparent;
+}
+
+.slide-menu__button:hover {
+  border-color: #b7ffec;
   border-radius: 6px;
   background-color: white;
+}
+.block1 {
+  display: flex;
+  flex-direction: column;
+  min-height: 88px;
+  
+}
+
+.block1__text--style {
+  font-size: 17px;
+  font-family: "TTLakesCondensed-Regular";
+  margin: 0 16px 0 16px;
+  letter-spacing: 0.2px;
+}
+
+.read-more::before {
+  content: "";
+  background: url(/image/icon-more.svg) no-repeat;
+  position: absolute;
+  height: 15px;
+  width: 10px;
+  margin-top: 4px;
+}
+
+.read-more {
+  padding: 16px 5px;
+}
+
+.read-more__text--style {
+  padding-left: 20px;
+  font-family: "TTLakesCondensed-Regular";
+  
+  font-size: 16px;
+  line-height: 18px;
+}
+/*Почему высота блока не растягивается на всю доступную область? */
+@media (min-width: 768px) {
+  .main__title {
+    margin-left: 20px;
+  }
+  .block1__text--style {
+    font-size: ;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .block1 {
+    flex-direction: row;
+    align-content:space-around;
+  }
+  .header__icon--for-768 {
+    display: block;
+  }
 }
