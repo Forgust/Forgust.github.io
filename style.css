@@ -64,15 +64,15 @@
   display: flex;
 }
 
-.header__logo::after {
+.header__right-block::after {
   content: "";
   background-color: #EAEAEA;
   display: block;
-  position: fixed;
+  position: relative;
   height: 32px;
   width: 2px;
-  top: 27px;
   right: 120px;
+  top: 4px;
 }
 
 
@@ -85,21 +85,21 @@
   display: none;
 }
 
-.button-call::before {
-  content: "";
-  background-image: url(/image/call.svg);
-  
-}
-
 .header--icon-margin {
   margin-right: 16px;
+}
+
+.body {
+  width: 100vw;
+  min-height: 95vh;
+  overflow-x: hidden;
 }
 
 .main {
   background-color: #F8F8F8;
   display: flex;
   flex-direction: column;
-  height: 100%;
+  min-height: 95vh;
 }
 
 .main__title-block--style {
@@ -164,11 +164,15 @@
   border-radius: 6px;
   background-color: white;
 }
+
 .block1 {
   display: flex;
   flex-direction: column;
-  min-height: 88px;
-  
+  height: 100%;
+}
+
+.block1__text--for-768 {
+  display: none;
 }
 
 .block1__text--style {
@@ -198,22 +202,26 @@
   font-size: 16px;
   line-height: 18px;
 }
-/*Почему высота блока не растягивается на всю доступную область? */
+
 @media (min-width: 768px) {
   .main__title {
     margin-left: 20px;
   }
   .block1__text--style {
-    font-size: ;
     padding: 10px 20px;
     display: flex;
     flex-direction: column;
   }
+  .main  {
+  }
   .block1 {
     flex-direction: row;
-    align-content:space-around;
   }
   .header__icon--for-768 {
     display: block;
+  }
+  .block1__text--for-768 {
+    display: block;
+    padding-top: 10px;
   }
 }
