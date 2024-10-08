@@ -56,7 +56,7 @@
   justify-content: space-between;
   border-bottom: 1px solid #D9FFF5;
   background-color: #FFFFFF;
-  padding-left: 16px;
+  padding: 5px 5px 0 25px;
 }
 
 .header__right-block,
@@ -78,7 +78,7 @@
 
 .header__left-block--style {
   align-items: center;
-  padding-right: 15px;
+  padding-right: 16px;
 }
 
 .header__icon--for-768 {
@@ -91,35 +91,37 @@
 
 .body {
   width: 100vw;
-  min-height: 95vh;
-  overflow-x: hidden;
+  min-height: 100vh;
+  /* overflow-x: hidden; */
 }
 
 .main {
   background-color: #F8F8F8;
   display: flex;
   flex-direction: column;
-  min-height: 95vh;
-}
-
-.main__title-block--style {
-  margin: 24px 16px 24px 0;
-
-}
-.main__title-block::before {
-  content: "";
-  background: url(/image/highlight.svg) no-repeat;
-  position: absolute;
-  height: 40px;
-  width: 4px;
-  top: 112px;
+  min-height: 100vh;
+  justify-content: space-around;
 }
 
 .main__title {
-  margin-left: 12px;
-  margin-top: 2px;
-  font-size: 28px;
+ display: flex;
+ gap: 3%;
+ align-items: center;
+}
+
+.main__title-block--style {
+  font-size: 15px;
   font-family: "TTLakes-Bold";
+  padding-top: 24px;
+}
+
+.main__title::before {
+  content: "";
+  background: url(/image/highlight.svg) no-repeat;
+  position: relative;
+  display: block;
+  height: 40px;
+  width: 4px;
 }
 
 .slide-menu {
@@ -178,7 +180,6 @@
 .block1__text--style {
   font-size: 17px;
   font-family: "TTLakesCondensed-Regular";
-  margin: 0 16px 0 16px;
   letter-spacing: 0.2px;
 }
 
@@ -204,24 +205,55 @@
 }
 
 @media (min-width: 768px) {
-  .main__title {
-    margin-left: 20px;
-  }
-  .block1__text--style {
+ 
+  .block1__text {
     padding: 10px 20px;
     display: flex;
     flex-direction: column;
   }
-  .main  {
-  }
+
   .block1 {
     flex-direction: row;
+    height: 60vh;
   }
+
+  .block1__image {
+    width: 360px;
+    height: 208px;
+    border-radius: 15px;
+  }
+
   .header__icon--for-768 {
     display: block;
   }
+
   .block1__text--for-768 {
     display: block;
     padding-top: 10px;
+  }
+  .header__logo::before {
+    content: "";
+    background-color: #EAEAEA;
+    display: block;
+    position: absolute;
+    height: 32px;
+    width: 2px;
+    left: 84px;
+    top: 28px;
+  }
+  .header__logo {
+    padding-left: 20px;
+  }
+  .header__left-block--style {
+    align-self: center;
+  }
+}
+
+@media (min-width: 1120px) {
+  .header {
+    display: none;
+  }
+  .main__title-block--style {
+   padding-top: 40px;
   }
 }
