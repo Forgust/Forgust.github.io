@@ -194,9 +194,16 @@
   height: 100%;
 }
 
+.block1__container {
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
 .block1__text {
   display: flex;
   flex-direction: column;
+  width: 20px;
 }
 
 
@@ -298,9 +305,8 @@
     padding-left: 32px;
   }
   .block1 {
-    padding: 0 32px;
-    justify-content: space-between;
-    gap: 36px;
+    padding: 0 1%;
+    justify-content: space-around;
   }
   .block1__image {
     width: 530px;
@@ -308,6 +314,7 @@
   }
   .block1__text--style {
     padding: 0;
+    width: 50vw;
   }
   .block1__text--for-1120 {
     display: block;
