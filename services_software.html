@@ -10,29 +10,29 @@
     <header>
       <nav class="header">
         <div class="header__left-block header__left-block--style">
-          <div class="header__icon-burger header--icon-margin">
+          <button name="menu" class="header__icon-burger header--icon-margin">
             <img src="/image/burger.svg" alt="icon menu">
-          </div>
-          <div class="header__logo">
+          </button>
+          <button name="main page" class="header__logo">
             <img src="/image/Group.svg" alt="icon logo">
-          </div>
+          </button>
         </div>
         <div class="header__right-block header__right-block--style">
-          <div class="header__icon-call header--icon-margin header__icon--for-768">
+          <button name="call" class="header__icon-call header--icon-margin header__icon--for-768">
             <img src="/image/call.svg" alt="icon call">
-          </div>
-          <div class="header__icon-call header--icon-margin header__icon--for-768">
+          </button>
+          <button name="chat" class="header__icon-chat header--icon-margin header__icon--for-768">
             <img src="/image/chat.svg" alt="icon chat">
-          </div>
-          <div class="header__icon-call header--icon-margin header__icon--for-768">
+          </button>
+          <button name="profile" class="header__icon-profile header--icon-margin header__icon--for-768">
             <img src="/image/profile.svg" alt="icon profile">
-          </div>
-          <div class="header__icon-repair header--icon-margin">
+          </button>
+          <button name="repair" class="header__icon-repair header--icon-margin">
             <img src="/image/repair.svg" alt="icon repair">
-          </div>
-          <div class="header__icon-checkstatus header--icon-margin">
+          </button>
+          <button name="checkstatus" class="header__icon-checkstatus header--icon-margin">
             <img src="/image/checkstatus.svg" alt="icon checkstatus">
-          </div>
+          </button>
         </div>
       </nav>
     </header>
@@ -40,24 +40,24 @@
       <div class="main__header">
         <div class="main__title-block">
           <div class="main__title-container">
+            <img src="/image/highlight.svg" alt="icon highlight">
             <h1 class="main__title main__title--style">Услуги и сервисы</h1>
           </div>
           <div class="main__buttons">
             <div class="button-for-1120-1 ">
               <div class="header__icon-repair header--icon-margin button-for-1120--style">
-                <a class="button-for-1120-1__text">Оставить заявку</a>
-                <img src="/image/repair.svg" alt="icon repair">
+                <a href="" class="button-for-1120-1__text">Оставить заявку
+                  <img src="/image/repair.svg" alt="icon repair">
+                </a>
               </div>
             </div>
             <div class="button-for-1120-2 ">
               <div class="header__icon-repair header--icon-margin button-for-1120--style">
-                <a class="button-for-1120-1__text">Статус ремонта</a>
-                <img src="/image/checkstatus.svg" alt="icon checkstatus">
+                <a href="" class="button-for-1120-1__text">Статус ремонта<img src="/image/checkstatus.svg" alt="icon checkstatus"></a>
               </div>
             </div>
           </div>
         </div>
-        
         <nav class="slide-menu">
           <ul class="slide-menu__list">
             <li class="slide-menu__item"><a class="slide-menu__button" >Ремонтируемые устройства</a></li>
@@ -70,15 +70,19 @@
         </nav>
       </div>
       <article class="block1">
-          <section class="block1__text block1__text--style">
-            <p>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
-            <p class="block1__text--for-768">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера</p>
-            <p class="block1__text--for-1120">Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
+        <div class="block1__container">
+          <div class="block1__text-container">
+            <section class="block1__text block1__text--style">
+              <p>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
+              <p>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера</p>
+              <p>Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
+            </section>
             <div class="read-more">
-              <h2 class="read-more__text read-more__text--style">Читать далее</h2>
+              <a href="" class="read-more__text read-more__text--style" ><img src="/image/icon-more.svg" alt="icon more">Читать далее</a>
             </div>
-          </section>
+          </div>
           <img src="/image/block1_image.png" alt="Фотография с логотипом" class="block1__image">
+        </div>
       </article>
     </main>
     <footer>
