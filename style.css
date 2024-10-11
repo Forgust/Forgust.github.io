@@ -1,11 +1,22 @@
 @font-face {
   font-family: "TTLakes-Medium";
-  src: local("TTLakes-Medium"),
+  src:
     url(/font-style-TTlakes/TTLakes-Medium.ttf) format("ttf"),
     url(/font-style-TTlakes/TTLakes-Medium.woff) format("woff"),
     url(/font-style-TTlakes/TTLakes-Medium.eot) format("eot");
+    font-weight: normal;
+    font-style: normal;
 }
 
+@font-face {
+  font-family: "TTLakes-Regular";
+    src: 
+      url(/font-style-TTlakes/TTLakes-Regular.eot) format("eot"),
+      url(/font-style-TTlakes/TTLakes-Regular.ttf) format("ttf"),
+      url(/font-style-TTlakes/TTLakes-Regular.woff) format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
 
 @font-face {
   font-family: "TTLakes-Bold";
@@ -13,31 +24,14 @@
     url(/font-style-TTlakes/TTLakes-Bold.ttf) format("ttf"),
     url(/font-style-TTlakes/TTLakes-Bold.woff) format("woff"),
     url(/font-style-TTlakes/TTLakes-Bold.eot) format("eot");
+  font-weight: bold;
+  font-style: normal;
 }
 
-@font-face {
-  font-family: "TTLakes-Black";
-  src: local("TTLakes-Black"),
-    url(/font-style-TTlakes/TTLakes-Black.ttf) format("ttf"),
-    url(/font-style-TTlakes/TTLakes-Black.woff) format("woff"),
-    url(/font-style-TTlakes/TTLakes-Black.eot) format("eot");
-}
 
-@font-face {
-  font-family: "TTLakes-Light";
-  src: local("TTLakes-Light"),
-    url(/font-style-TTlakes/TTLakes-Light.ttf) format("ttf"),
-    url(/font-style-TTlakes/TTLakes-Light.woff) format("woff"),
-    url(/font-style-TTlakes/TTLakes-Light.eot) format("eot");
-}
 
-@font-face {
-  font-family: "TTLakesCondensed-Regular";
-  src: local("TTLakesCondensed-Regular"),
-    url(/font-style-TTlakes/TTLakesCondensed-Regular.ttf) format("ttf"),
-    url(/font-style-TTlakes/TTLakesCondensed-Regular.woff) format("woff"),
-    url(/font-style-TTlakes/TTLakesCondensed-Regular.eot) format("eot");
-}
+
+
 
 *{
   margin: 0;
@@ -231,8 +225,8 @@ body {
 
 .block1__text--style {
   font-size: 17px;
-  font-family: "TTLakesCondensed-Regular";
-  letter-spacing: 0.2px;
+  font-family: "TTLakes-Regular", sans-serif;
+  font-weight: 200;
 }
 .block1__text--style p {
   margin-bottom: 1em;
@@ -253,10 +247,10 @@ body {
 }
 
 .read-more__text--style {
-  padding-left: 20px;
-  font-family: "TTLakesCondensed-Regular";
+  padding-left: 5%;
+  font-family: "TTLakes-Regular";
+  font-weight: 600;
   font-size: 16px;
-  line-height: 18px;
 }
 
 @media (min-width: 768px) {
