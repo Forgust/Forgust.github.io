@@ -236,7 +236,7 @@ body {
     height: 86vh;
   }
   .article__text {
-    height: 60%;
+    height: 50%;
     padding-top: 5px;
   }
 
@@ -244,7 +244,7 @@ body {
     flex-direction: row;
     flex-wrap: nowrap;
     height: 50vh;
-  
+    
   }
 
   .article__image {
@@ -275,7 +275,7 @@ body {
     align-self: center;
   }
   .read-more {
-    padding-left: 25px;
+    padding: 16px 0 0 25px;
   }
 }
 
@@ -286,7 +286,7 @@ body {
   }
   .main {
     height: 100vh;
-    gap: 10px
+    gap: 6%;
   }
 
   .main__title-block--style {
@@ -308,9 +308,19 @@ body {
   .slide-menu {
     padding-left: 32px;
   }
-  .article__text {
-    height: 50vh;
+  .article__container {
+    gap: 5%;
+    align-self: flex-start;
+    padding-left: 2%;
   }
+  .article__text-container {
+    padding-top: 16px;
+  }
+
+  .article__text {
+    overflow-y: none;
+  }
+  
   .article__image {
     width: 530px;
     height: 307px;
