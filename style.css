@@ -83,6 +83,7 @@
 body {
   width: 100vw;
   min-height: 100vh;
+  overflow-x: none;
 }
 
 .main {
@@ -135,6 +136,7 @@ body {
   color: #7E7E82;
   font-family: "TTLakes-Medium";
   padding: 24px 16px 0 16px;
+  max-width: 100%;
 }
 
 .slide-menu::-webkit-scrollbar {
@@ -187,7 +189,7 @@ body {
   overflow-y: hidden;
   display: flex;
   flex-direction: column; 
-  padding: 0 5%;
+  padding: 0 16px;
   height: 25vh;
 }
 
@@ -215,7 +217,7 @@ body {
 }
 
 .read-more {
-  padding: 10px 6%;
+  padding:  0 16px 16px 16px;
   display: flex;
 }
 
@@ -225,19 +227,24 @@ body {
   font-size: 16px;
 }
 
+.read-more img {
+  padding-right: 10px;
+}
+
 @media (min-width: 768px) {
   .main {
     height: 86vh;
-    gap: 32px;
   }
   .article__text {
-    height: 50%;
-
+    height: 60%;
+    padding-top: 5px;
   }
+
   .article__container {
     flex-direction: row;
     flex-wrap: nowrap;
     height: 50vh;
+  
   }
 
   .article__image {
@@ -267,6 +274,9 @@ body {
   .header__left-block--style {
     align-self: center;
   }
+  .read-more {
+    padding-left: 25px;
+  }
 }
 
 
@@ -276,7 +286,9 @@ body {
   }
   .main {
     height: 100vh;
+    gap: 10px
   }
+
   .main__title-block--style {
    padding-top: 40px;
   }
@@ -284,6 +296,7 @@ body {
     flex-wrap: wrap;
   }
   .slide-menu {
+    padding: 8px;
     overflow-x: visible;
   }
   .main__buttons {
@@ -295,16 +308,20 @@ body {
   .slide-menu {
     padding-left: 32px;
   }
-  .main__article {
-    padding: 0 1%;
-    justify-content: space-around;
+  .article__text {
+    height: 50vh;
   }
   .article__image {
     width: 530px;
     height: 307px;
   }
+
   .article__text--style {
     padding: 0;
     width: 50vw;
   }
+  .button-for-desktop {
+    padding-right: 32px;
+  }
+ 
 }
