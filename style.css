@@ -71,9 +71,6 @@
   padding-right: 16px;
 }
 
-.header__icon--for-768 {
-  display: none;
-}
 
 .header--icon-margin {
   margin-right: 16px;
@@ -124,7 +121,7 @@ body {
   color: black;
 }
 
-.button-for-1120--style {
+.button-for-desktop--style {
   display: flex;
   align-items: center;
   font-size: 18px;
@@ -158,7 +155,7 @@ body {
   height: 40px;
 }
 
-.slide-menu__button {
+.slide-menu__link {
   height: 40px;
   font-size: 16px;
   line-height: 24px;
@@ -168,25 +165,25 @@ body {
   border: 2px solid transparent;
 }
 
-.slide-menu__button:hover {
+.slide-menu__link:hover {
   border-color: #b7ffec;
   border-radius: 6px;
   background-color: white;
 }
 
-.block1 {
+.main__article {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.block1__container {
+.article__container {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
 }
 
-.block1__text {
+.article__text {
   overflow-y: hidden;
   display: flex;
   flex-direction: column; 
@@ -194,37 +191,28 @@ body {
   height: 25vh;
 }
 
-.block1__image {
+.article__image {
   max-width: 320px;
 }
 
-.block1__text-container {
+.article__text-container {
   display: flex;
   flex-direction: column;
 }
 
-.buttons-for-tablet,
-.block1__text--for-1120 {
+.buttons-for-tablet {
   display: none;
 }
 
-.block1__text--style {
+.article__text--style {
   font-size: 17px;
   font-family: "TTLakes-Regular", sans-serif;
   font-weight: 200;
   letter-spacing: -0.2px;
 }
-.block1__text--style p {
+.article__text--style p {
   margin-bottom: 1em;
 }
-/* .read-more::before {
-  content: "";
-  background: url(/image/icon-more.svg) no-repeat;
-  position: absolute;
-  height: 15px;
-  width: 10px;
-  margin-top: 4px;
-} */
 
 .read-more {
   padding: 10px 6%;
@@ -242,17 +230,17 @@ body {
     height: 86vh;
     gap: 32px;
   }
-  .block1__text {
+  .article__text {
     height: 50%;
 
   }
-  .block1__container {
+  .article__container {
     flex-direction: row;
     flex-wrap: nowrap;
     height: 50vh;
   }
 
-  .block1__image {
+  .article__image {
     max-width: none;
     width: 360px;
     height: 208px;
@@ -307,19 +295,16 @@ body {
   .slide-menu {
     padding-left: 32px;
   }
-  .block1 {
+  .main__article {
     padding: 0 1%;
     justify-content: space-around;
   }
-  .block1__image {
+  .article__image {
     width: 530px;
     height: 307px;
   }
-  .block1__text--style {
+  .article__text--style {
     padding: 0;
     width: 50vw;
-  }
-  .block1__text--for-1120 {
-    display: block;
   }
 }
