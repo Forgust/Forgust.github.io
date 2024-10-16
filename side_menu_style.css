@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "TTLakes";
+    src: 
+      url(/font-style-TTlakes/TTLakes-Regular.eot) format("eot"),
+      url(/font-style-TTlakes/TTLakes-Regular.ttf) format("ttf"),
+      url(/font-style-TTlakes/TTLakes-Regular.woff) format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+  outline: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+
+
