@@ -27,6 +27,7 @@
   justify-content: space-between;
   font-family: "TTLakes";
   letter-spacing: 0.2px;
+  font-size: 16px;
 }
 /* верхний блок */
 .aside-header {
@@ -40,6 +41,7 @@
   display: flex;
   align-items: center;
 }
+
     /* ИКОНКИ */
 
 .aside-header__button,
@@ -102,9 +104,9 @@
   content: "";
   background-image: url(/image/call_element.svg);
   background-repeat:  no-repeat;
-  position: absolute;
-  bottom: 136px;
-  left: 34px;
+  position: relative;
+  display: block;
+  right: -10px;
   width: 20px;
   height: 20px;
 }
@@ -113,9 +115,9 @@
   content: "";
   background-image: url(/image/chat_element_3.svg);
   background-repeat:  no-repeat;
-  position: absolute;
-  bottom: 136px;
-  left: 93px;
+  position: relative;
+  display: block;
+  right: -10px;
   width: 20px;
   height: 20px;
 }
@@ -124,22 +126,27 @@
   content: "";
   background-image: url(/image/profile_element.svg);
   background-repeat:  no-repeat;
-  position: absolute;
-  bottom: 136px;
-  left: 152px;
+  position: relative;
+  display: block;
+  right: -10px;
   width: 20px;
   height: 20px;
+  
 }
 
 /* Главное меню */
+.aside-main {
+  margin-top: 12%;
+}
+
 .aside-main__link {
   display: block;
   color: black;
   line-height: 24px;
   height: 24px;
-  margin-bottom: 32px;
   margin-left: 24px;
   font-weight: 600;
+  padding: 16px 0;
 }
 
 
