@@ -20,7 +20,6 @@
 
 .aside, body{
   width: 320px;
-  box-shadow: -20px -40px 50px;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -28,6 +27,10 @@
   font-family: "TTLakes";
   letter-spacing: 0.2px;
   font-size: 16px;
+}
+
+.aside {
+  box-shadow: -20px -40px 50px;
 }
 /* верхний блок */
 .aside-header {
@@ -95,7 +98,7 @@
   width: 3px;
   position: relative;
   display: block;
-  left: 18px;
+  left: 19px;
   top: 8px;
   transform: rotate(135deg);
   border-radius: 2px;
@@ -110,7 +113,7 @@
   position: relative;
   display: block;
   top: -17px;
-  left: 18px;
+  left: 19px;
   transform: rotate(45deg);
   border-radius: 2px;
   transition: 0.4s;
@@ -161,7 +164,9 @@
 }
  /* АНИМАЦИИ */
 
-
+@keyframes bordering {
+  
+}
 
 .aside-main__item:hover .aside-main__link {
   opacity: 0.5;
