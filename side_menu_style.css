@@ -44,97 +44,93 @@
 
     /* ИКОНКИ */
 
-.aside-header__button,
-.aside-footer__button {
+.round-button {
   height: 40px;
   width: 40px;
   background-color: #FF3E79;
   border-radius: 50%;
   margin: 16px;
   cursor: pointer;
-}
-
-.close::before {
-  content: "";
-  background-color: #FFFFFF;
-  height: 25px;
-  width: 3px;
-  position: absolute;
-  top: 32px;
-  left: 42.5px;
-  transform: rotate(135deg);
-  border-radius: 2px;
-}
-
-.close::after {
-  content: "";
-  background-color: #FFFFFF;
-  height: 25px;
-  width: 3px;
-  position: absolute;
-  top: 32px;
-  left: 42.5px;
-  transform: rotate(45deg);
-  border-radius: 2px;
+  transition: 0.5s;
 }
 
 .logo {
   width: 97px;
   height: 51px;
-  background-color: #FFFFFF;
-  border-radius: 0;
-  background-image: url(/image/Group.svg);
   background-size: 97px 51px;
   background-position: 100% 100%;
   margin-left: 0;
 }
 
-.search::after {
-  content: "";
+.round-button--search {
   background-image: url(/image/search_element.svg);
   background-repeat:  no-repeat;
-  position: absolute;
-  top: 36px;
-  left: 268px;
-  width: 20px;
-  height: 20px;
+  background-position: center;
 }
 
-.call::after {
-  content: "";
+.round-button--call {
   background-image: url(/image/call_element.svg);
   background-repeat:  no-repeat;
-  position: relative;
-  display: block;
-  right: -10px;
-  width: 20px;
-  height: 20px;
+  background-position: center;
 }
 
-.chat::after {
+.round-button--chat {
   content: "";
   background-image: url(/image/chat_element_3.svg);
   background-repeat:  no-repeat;
-  position: relative;
-  display: block;
-  right: -10px;
-  width: 20px;
-  height: 20px;
+  background-position: center;
 }
 
-.profile::after {
+.round-button--profile {
   content: "";
   background-image: url(/image/profile_element.svg);
   background-repeat:  no-repeat;
-  position: relative;
-  display: block;
-  right: -10px;
-  width: 20px;
-  height: 20px;
-  
+  background-position: center;
 }
 
+.round-button--close::before {
+  content: "";
+  background-color:#FFFFFF;
+  height: 25px;
+  width: 3px;
+  position: relative;
+  display: block;
+  left: 18px;
+  top: 8px;
+  transform: rotate(135deg);
+  border-radius: 2px;
+  transition: 0.4s;
+}
+
+.round-button--close::after {
+  content: "";
+  background-color: #FFFFFF;
+  height: 25px;
+  width: 3px;
+  position: relative;
+  display: block;
+  top: -17px;
+  left: 18px;
+  transform: rotate(45deg);
+  border-radius: 2px;
+  transition: 0.4s;
+}
+
+.aside-main__item::before {
+  content: "";
+  background-color: #41F6D7;
+  width: 4px;
+  height: 32px;
+  position: absolute;
+  display: block;
+  top: auto;
+  border-radius: 2px;
+  opacity: 0;
+  transition: 0.4s;
+  transform: scaleY(0.2);
+}
 /* Главное меню */
+
 .aside-main {
   margin-top: 16px;
   height: auto;
@@ -154,7 +150,7 @@
 
 .aside-main__item {
   padding: 4px 0;
-  transition: opacity 0.4s;
+  transition: 0.4s;
 }
 
 .aside-main__link {
@@ -162,22 +158,10 @@
   color: black;
   margin-left: 24px;
   font-weight: 600;
-  
 }
  /* АНИМАЦИИ */
 
-.aside-main__item::before {
-  content: "";
-  background-color: #41F6D7;
-  width: 4px;
-  height: 32px;
-  position: absolute;
-  display: block;
-  top: auto;
-  border-radius: 2px;
-  opacity: 0;
-  transition: opacity 0.4s;
-}
+
 
 .aside-main__item:hover .aside-main__link {
   opacity: 0.5;
@@ -185,28 +169,40 @@
 
 .aside-main__item:hover::before {
   opacity: 1;
+  transform: scaleY(1);
 }
 
+.round-button:hover {
+  transform: scale(1.2);
+}
 
+.round-button:hover.round-button--close::before {
+  transform: translate(-2px, 5px) rotate(-65deg);
+}
 
-/* 
-.aside-main__item:hover {
-  border-left: 4px solid #41F6D7;
-} */
+.round-button:hover.round-button--close::after {
+  transform: translate(-2px, -5px) rotate(-115deg);
+}
 
 /* нижний блок */
 
 
 .aside-footer {
   margin-left: 8px;
+  display: flex;
 }
 
-.aside-footer .aside-footer__button {
+.aside-footer .round-button {
   margin-right: 0;
 }
 
 .contacts {
   margin-left: 24px;
+}
+
+.contacts a {
+  display: block;
+  color: black;
 }
 
 .email {
