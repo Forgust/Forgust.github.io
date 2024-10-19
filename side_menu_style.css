@@ -30,8 +30,9 @@
 }
 
 .aside {
-  box-shadow: -20px -40px 50px;
+  box-shadow: -5px 0 50px;
 }
+
 /* верхний блок */
 .aside-header {
   display: flex;
@@ -164,11 +165,9 @@
 }
  /* АНИМАЦИИ */
 
-@keyframes bordering {
-  
-}
 
-.aside-main__item:hover .aside-main__link {
+.aside-main__item:hover .aside-main__link,
+.aside-footer__link:hover {
   opacity: 0.5;
  }
 
@@ -187,6 +186,10 @@
 
 .round-button:hover.round-button--close::after {
   transform: translate(-2px, -5px) rotate(-115deg);
+}
+
+.lang-switcher__link:hover {
+  transform: scale(1.1);
 }
 
 /* нижний блок */
@@ -231,4 +234,10 @@
 
 .lang-switcher__link {
   display: block;
+  color: black;
+  font-weight: 600;
+}
+
+.lang-switcher__link.active {
+  opacity: 0.5;
 }
