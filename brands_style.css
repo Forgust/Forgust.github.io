@@ -1,0 +1,96 @@
+@font-face {
+  font-family: "TTLakes-Regular";
+    src: 
+      url(/font-style-TTlakes/TTLakes-Regular.eot) format("eot"),
+      url(/font-style-TTlakes/TTLakes-Regular.ttf) format("ttf"),
+      url(/font-style-TTlakes/TTLakes-Regular.woff) format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+  outline: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+.body {
+  height: 100vh;
+  background-color: #F8F8F8;
+}
+
+.main {
+  min-width: 0;
+  height: 32%;
+}
+
+/* Заголовок/шапка */
+
+.header {
+  height: 80px;
+  width: 100vw;
+  background-image: linear-gradient(to right, #F8F8F8 , #FFFFFF );
+  border-top: 1px solid #D9FFF5;
+}
+
+.title__text {
+  padding: 16px;
+}
+
+.title__text--style {
+  font-family: 'TTLakes-Regular';
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 100;
+  color: #7E7E82;
+}
+
+/* Свайпер */
+
+.main__swiper {
+  height: 130px;
+}
+
+.image-slide {
+  background-color: #FFFFFF;
+  width: 240px;
+  height: 72px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 16px;
+  border: 1px solid #EAEAEA;
+  border-radius: 8px;
+}
+
+.image-slide img { 
+  margin: 16px 20px;
+}
+
+.logo-button {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #FF3E79;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  background-image: url(/image/dropdown.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 16px;
+}
+
+ 
+
+.main .main__swiper .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  line-height: 12px;
+  background-color: #DDDDDD;
+  margin: 0 6px;
+}
+
