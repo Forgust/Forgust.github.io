@@ -29,6 +29,10 @@
   height: 32%;
 }
 
+.main__table {
+  display: none;
+}
+
 /* Заголовок/шапка */
 
 .header {
@@ -84,6 +88,7 @@
   margin: 16px;
 }
 
+
  
 
 .main .main__swiper .swiper-pagination-bullet {
@@ -94,3 +99,30 @@
   margin: 0 6px;
 }
 
+@media (min-width: 768px) {
+  .main__swiper {
+    display: none;
+  }
+   
+  .title__text {
+    padding: 16px 24px;
+  }
+
+  .main__table {
+    display: block;
+  }
+
+  .main__slides {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    column-gap: 24px;
+    row-gap: 16px;
+    
+  }
+
+  .image-slide {
+    margin: 0;
+    width: 224px;
+  }
+}
